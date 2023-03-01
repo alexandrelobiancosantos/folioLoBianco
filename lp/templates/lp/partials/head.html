@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css"
+        integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
+        integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.6rem;
+            overflow: hidden;
+        }
+
+        .mainHeaderContainer {
+            background-color: #f3f5f8;
+        }
+
+        .container {
+            /*max-width: 144rem;*/
+            margin: 0 auto;
+            /*min-width: 100vh;*/
+        }
+
+        nav {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            height: 80px;
+            z-index: 111;
+            line-height: 80px;
+            margin: auto;
+            /*background-color: red;*/
+        }
+
+        .logo {
+            min-width: 400px;
+            display: flex;
+            font-size: 40px;
+            font-weight: 800;
+            color: #3d535f;
+            letter-spacing: 3px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        b {
+            font-size: 70px;
+            color: #7f00ff;
+        }
+
+        .navItems {
+            display: flex;
+        }
+
+        .navItems li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        .navItems li a {
+            font-size: 25px;
+            color: #3d535f;
+            letter-spacing: 3px;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        .navItems li:hover a,
+        .links a:hover {
+            color: #7f00ff
+        }
+
+        .links a {
+            font-size: 30px;
+            color: #3d535f;
+            margin: 25px 10px;
+        }
+
+        .cloudContainer {
+            position: relative;
+            height: 400px;
+        }
+
+
+        .cloud {
+            position: relative;
+            top: 100px;
+            left: 100px;
+            width: 320px;
+            height: 100px;
+            background: #7f00ff;
+            border-radius: 100px;
+            animation: object1 10s infinite;
+        }
+
+        .cloud::before {
+            content: '';
+            position: absolute;
+            width: 110px;
+            height: 110px;
+            background: #7f00ff;
+            border-radius: 50%;
+            top: -50px;
+            left: 40px;
+            box-shadow: 90px 0 0 30px #7f00ff;
+            animation: object1 10s infinite;
+        }
+
+        @keyframes object1 {
+            50% {
+                left: 20%;
+            }
+        }
+    </style>
+</head>

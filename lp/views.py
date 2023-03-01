@@ -4,4 +4,7 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'lp/index.html')
+    # return render(request, 'lp/index.html')
+    return render(request, 'lp/pages/index.html', context={
+        'name': 'Lo Bianco',
+    })
